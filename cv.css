@@ -1,0 +1,146 @@
+:root {
+    --main-color: #083192;
+    --hover-color: #0870b5;
+    --bg-color: #f9f9f9;
+    --container-bg: #ffffff;
+    --text-color: #333333;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+  }
+
+  .container {
+    max-width: 950px;
+    margin: 40px auto;
+    background-color: var(--container-bg);
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+  }
+
+  .hacker-title {
+    color: var(--main-color);
+    transition: color 0.3s;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .hacker-title:hover {
+  color: var(--hover-color);
+  text-shadow: 0 0 5px var(--hover-color), 0 0 10px var(--hover-color);
+}
+
+
+  h1 {
+    font-family: 'Major Mono Display', monospace;
+    color: var(--main-color);
+    font-size: 42px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  h2.section-title {
+    border-bottom: 2px solid var(--main-color);
+    padding-bottom: 5px;
+    color: var(--main-color);
+    margin-top: 30px;
+    font-size: 22px;
+  }
+
+  p, li {
+    line-height: 1.7;
+    font-size: 16px;
+  }
+    
+    li:hover {
+      transform: scale(1.03);
+      color: var(--hover-color);
+      transition: all 0.3s ease;
+    }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    margin-bottom: 12px;
+    color: inherit;
+  }
+
+  .date {
+    float: right;
+    color: #888;
+    font-size: 14px;
+  }
+
+  a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  a:hover {
+    color: var(--hover-color);
+  }
+
+  .badge {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 8px;
+    font-size: 12px;
+    margin-left: 8px;
+  }
+
+  .contact-info {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+
+  .btn:hover {
+    background-color: var(--hover-color);
+    color: white;
+    padding-right: 24px;
+    transition: 0.2s;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    h2.section-title {
+      font-size: 18px;
+    }
+  }
